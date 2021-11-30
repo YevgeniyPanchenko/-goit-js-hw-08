@@ -32,4 +32,4 @@ var i=require("./debounce"),e=require("./isObject"),n="Expected a function";func
 },{"./debounce":"CXfR","./isObject":"u9vI"}],"TTyb":[function(require,module,exports) {
 "use strict";var e=t(require("lodash/throttle"));function t(e){return e&&e.__esModule?e:{default:e}}const a="feedback-form-state",s=document.querySelector(".feedback-form");function l(e){const t={email:s.elements.email.value,message:s.elements.message.value};localStorage.setItem(a,JSON.stringify(t))}function n(e){e.preventDefault(),e.currentTarget.reset(),console.log(localStorage.getItem(a))}function o(){const e=localStorage.getItem(a),t=JSON.parse(e);t&&(s.elements.email.value=t.email,s.elements.message.value=t.message)}s.addEventListener("input",(0,e.default)(l,500)),s.addEventListener("submit",n),o();
 },{"lodash/throttle":"Ywd4"}]},{},["TTyb"], null)
-//# sourceMappingURL=/-goit-js-hw-08./03-feedback.e21dc7fb.js.map
+//# sourceMappingURL=/goit-js-hw-08/03-feedback.e21dc7fb.js.map
